@@ -9,3 +9,4 @@ debug = true
 [dependencies]
 anyhow = "1.0.93"
 regex = "1.11.1"
+text_io = "0.1.12"
