@@ -7,6 +7,7 @@ edition = "2021"
 debug = true
 
 [dependencies]
-anyhow = "1.0.93"
-regex = "1.11.1"
-text_io = "0.1.12"
+anyhow = "1.0"
+rayon = "1.10"
+regex = "1.11"
+text_io = "0.1"
