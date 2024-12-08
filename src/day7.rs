@@ -1,3 +1,5 @@
+use itertools::Itertools;
+
 #[derive(PartialEq, Debug)]
 pub struct Equation {
     pub result: usize,
@@ -53,7 +55,6 @@ pub fn evaluate(values: &[usize], operators: &[&Operator]) -> usize {
 }
 
 pub fn equation_is_true(equation: &Equation, operators: &[Operator]) -> bool {
-    use itertools::Itertools;
     for operators in std::iter::repeat(operators)
         .take(equation.values.len() - 1)
         .multi_cartesian_product()
